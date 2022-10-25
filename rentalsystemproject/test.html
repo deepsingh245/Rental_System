@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+
+*{
+    box-sizing: border-box;
+}
+
+div{
+  white-space: nowrap; 
+  width: 50px; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+table{
+    table-layout: fixed !important;
+    width: 500px;
+}
+
+table thead tr th:last-child{
+    background-color: purple;
+    white-space: nowrap;
+
+
+}
+table tbody tr td:last-child {
+    background:pink;
+    white-space: nowrap;
+
+}
+table tbody tr td:last-child span{
+    white-space: nowrap; 
+  width: 60px; 
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis !important;  
+  background-color: green;  
+}
+</style>
+</head>
+<body>
+
+
+<div>Hello world!</div>
+
+
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>name</th>
+            <th class="myth">email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>ramandeep</td>
+            <td class="mytd"> <span> ramandeep@gmail.com ramandeep@gmail.com</span> </td>
+        </tr>
+    </tbody>
+</table>
+
+
+</body>
+</html>
